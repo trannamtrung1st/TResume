@@ -48,6 +48,10 @@ body {
   min-height: 1090.41px;
 }
 
+.resume .resume__content {
+  padding-top: 5mm;
+}
+
 .resume h1 {
   font-size: 2.5em;
   font-weight: 600;
@@ -175,8 +179,23 @@ body {
   margin: auto;
 }
 
+.resume .xp-item-wrapper:not(.clearfix) {
+  padding-top: 10mm;
+}
+
 .resume .xp-item {
-  margin-bottom: 4em;
+  padding: 1.5em;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(57, 202, 105, 0.3);
+  transition: all 0.3s ease;
+}
+
+.resume .xp-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  border-color: rgba(57, 202, 105, 0.5);
+  transform: translateY(-2px);
 }
 
 .resume .xp-item:last-child {
@@ -259,5 +278,19 @@ body {
 
   .btn-print {
     display: none;
+  }
+
+  .resume .xp-item {
+    border: 2px solid rgba(57, 202, 105, 0.5);
+    box-shadow: none;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+
+  .resume .xp-item:hover {
+    box-shadow: none;
+    transform: none;
   }
 }
