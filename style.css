@@ -173,11 +173,11 @@ body {
 }
 
 .resume .info-avatar {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-image: url("./avatar.jpg");
-  background-position: 50% 10%;
-  background-size: 250%;
+  background-position: 50% 50%;
+  background-size: 120%;
   border-radius: 100%;
   border: 2px solid #39ca69;
   margin: auto;
